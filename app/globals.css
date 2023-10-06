@@ -1,0 +1,124 @@
+@import url('https://fonts.cdnfonts.com/css/morrison');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+
+body {
+  font-family: 'Morrison', sans-serif;
+  color: lightgrey;
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+}
+
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  z-index: 99;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal {
+  border-radius: 20px;
+  text-align: center;
+}
+
+
+
+.carousel-container {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.carousel-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.carousel-image.active {
+  opacity: 1;
+}
+
+.carousel-description {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.carousel-dots {
+  bottom: 20px;
+  left: 50%;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #ccc;
+  cursor: pointer;
+  margin-right: 0.3rem;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.dot.active {
+  background-color: #ffbf00;
+  width: 12px;
+  height: 12px;
+}
+
+.closeButton {
+  top: 0;
+  left: 0;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.closeIconWrapper {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: .5rem;
+}
+
+.parallax-spacing {
+  margin-top: 6rem
+}
+
+.modalImage {
+  width: 100%;
+  max-width: 600px;
+}
+
+
