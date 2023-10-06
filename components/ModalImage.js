@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { FaTimes } from "react-icons/fa";
+import Image from "next/image";
 
 export default function Modal({ imageUrl, onClose }) {
   useEffect(() => {
@@ -51,7 +52,7 @@ export default function Modal({ imageUrl, onClose }) {
               <FaTimes />
             </div>
           </div>
-          <img src={imageUrl} alt="Preview" className="modalImage" />
+          <Image src={imageUrl} alt="Preview" className="modalImage" />
         </motion.div>
       </motion.div>
     </AnimatePresence>
