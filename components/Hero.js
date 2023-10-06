@@ -46,7 +46,7 @@ export default function Hero() {
             className="text-left"
           >
             <p className="text-sm mt-2">
-            More than 18'500 tropical Islands form the archipelago of Indonesia. A balanced tropical climate, fertile soils with high nutrient content and exceptional biodiversity form a good ground to plant a wide variety of spices and herbs.
+            More than 18500 tropical Islands form the archipelago of Indonesia. A balanced tropical climate, fertile soils with high nutrient content and exceptional biodiversity form a good ground to plant a wide variety of spices and herbs.
               Situated in the West of Java, Mount Lawu offers a natural environment, surrounded by countless lush gardens. They belong mostly to small farmers who have maintained and cultivated their gardens with love and care for centuries.
               Mount Lawu imports selected Indonesian agricultural products exclusively to Switzerland. The highest quality standards are adhered to during cultivation and processing.
               Do you have any special requests or would you like to get to know Mount Lawu products? We are looking forward to your contact!
