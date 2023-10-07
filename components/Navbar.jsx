@@ -26,8 +26,8 @@ export default function Navbar() {
     { text: "Our Products", href: "#our-products" },
     { text: "How we work", href: "#our-work" },
     { text: "How we ensure Quality", href: "#our-quality" },
-    { text: "How we develop", href: "#" },
-    { text: "Team & Contact", href: "#" },
+    { text: "How we develop", href: "#our-development" },
+    { text: "Team & Contact", href: "#our-team" },
   ];
 
   useEffect(() => {
@@ -55,7 +55,9 @@ export default function Navbar() {
         <div className="flex justify-between items-center">
           <div className="flex justify-start items-center gap-2">
             <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
+              <Link href="/">
               <Image src={logo} alt="Logo" width={200} />
+              </Link>
             </motion.div>
           </div>
           <div className="md:hidden">

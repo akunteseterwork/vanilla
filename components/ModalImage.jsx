@@ -42,7 +42,7 @@ export default function Modal({ imageUrl, onClose }) {
         exit={{ opacity: 0 }}
       >
         <motion.div
-          className="modal"
+          className="modal p-4"
           initial={{ scale: 0 }}
           animate={{ scale: 1 }}
           exit={{ scale: 0 }}

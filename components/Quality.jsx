@@ -38,12 +38,12 @@ export default function Quality() {
     const windowHeight = window.innerHeight;
     const isMobile = window.innerWidth <= 768;
 
-    const containerThreshold = isMobile ? 5.6 * windowHeight : 3.6 * windowHeight;
-    const headerThreshold = isMobile ? 5.7 * windowHeight : 3.7 * windowHeight;
-    const description1Threshold = isMobile ? 5.8 * windowHeight : 3.8 * windowHeight;
-    const description2Threshold = isMobile ? 6 * windowHeight : 4 * windowHeight;
-    const description3Threshold = isMobile ? 6.2 * windowHeight : 4 * windowHeight;
-    const description4Threshold = isMobile ? 6.4 * windowHeight : 4 * windowHeight;
+    const containerThreshold = isMobile ? 4.55 * windowHeight : 3.6 * windowHeight;
+    const headerThreshold = isMobile ? 4.6 * windowHeight : 3.7 * windowHeight;
+    const description1Threshold = isMobile ? 4.8 * windowHeight : 3.8 * windowHeight;
+    const description2Threshold = isMobile ? 5 * windowHeight : 4 * windowHeight;
+    const description3Threshold = isMobile ? 5.4 * windowHeight : 4 * windowHeight;
+    const description4Threshold = isMobile ? 5.4 * windowHeight : 4 * windowHeight;
 
     setIsVisible({
       container: scrollPosition >= containerThreshold,
@@ -60,12 +60,12 @@ export default function Quality() {
     const isMobile = window.innerWidth <= 768;
     const totalContentHeight =
       windowHeight +
-      (containerRef.current ? containerRef.current.offsetHeight : isMobile ? 830 : 540) +
-      (headerRef.current ? headerRef.current.offsetHeight : isMobile ? 830 : 540) +
-      (description1Ref.current ? description1Ref.current.offsetHeight : isMobile ? 830 : 540) +
-      (description2Ref.current ? description2Ref.current.offsetHeight : isMobile ? 830 : 540) +
-      (description3Ref.current ? description3Ref.current.offsetHeight : isMobile ? 830 : 540) +
-      (description4Ref.current ? description4Ref.current.offsetHeight : isMobile ? 830 : 540);
+      (containerRef.current ? containerRef.current.offsetHeight : isMobile ? 900 : 540) +
+      (headerRef.current ? headerRef.current.offsetHeight : isMobile ? 900 : 540) +
+      (description1Ref.current ? description1Ref.current.offsetHeight : isMobile ? 900 : 540) +
+      (description2Ref.current ? description2Ref.current.offsetHeight : isMobile ? 900 : 540) +
+      (description3Ref.current ? description3Ref.current.offsetHeight : isMobile ? 900 : 540) +
+      (description4Ref.current ? description4Ref.current.offsetHeight : isMobile ? 900 : 540);
 
     if (window.scrollY > totalContentHeight) {
       setIsVisible({

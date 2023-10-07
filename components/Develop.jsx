@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import headerImage from "@/public/assets/develop/header.jpg";
 import videoFile from "@/public/assets/develop/video.mp4";
-import VideoModal from "../components/ModalVideo";
+import VideoModal from "./ModalVideo";
 import { FaPlayCircle } from 'react-icons/fa';
 
 export default function Develop() {
@@ -41,10 +41,10 @@ export default function Develop() {
     const windowHeight = window.innerHeight;
     const isMobile = window.innerWidth <= 768;
 
-    const containerThreshold = isMobile ? 7.4 * windowHeight : 4.5 * windowHeight;
-    const headerThreshold = isMobile ? 7.48 * windowHeight : 4.6 * windowHeight;
-    const mediaThreshold = isMobile ? 7.7 * windowHeight : 5.1 * windowHeight;
-    const descriptionThreshold = isMobile ? 8 * windowHeight : 5.1 * windowHeight;
+    const containerThreshold = isMobile ? 7.1 * windowHeight : 4.6 * windowHeight;
+    const headerThreshold = isMobile ? 7.2 * windowHeight : 4.7 * windowHeight;
+    const mediaThreshold = isMobile ? 7.6 * windowHeight : 5.1 * windowHeight;
+    const descriptionThreshold = isMobile ? 7.7 * windowHeight : 5.1 * windowHeight;
 
     setIsVisible({
       container: scrollPosition >= containerThreshold,
@@ -59,10 +59,10 @@ export default function Develop() {
     const isMobile = window.innerWidth <= 768;
     const totalContentHeight =
       windowHeight +
-      (containerRef.current ? containerRef.current.offsetHeight : isMobile ? 1850 : 1250) +
-      (headerRef.current ? headerRef.current.offsetHeight : isMobile ? 1850 : 1250) +
-      (mediaRef.current ? mediaRef.current.offsetHeight : isMobile ? 1850 : 1300) +
-      (descriptionRef.current ? descriptionRef.current.offsetHeight : isMobile ? 1850 : 1300);
+      (containerRef.current ? containerRef.current.offsetHeight : isMobile ? 1800 : 1250) +
+      (headerRef.current ? headerRef.current.offsetHeight : isMobile ? 1800 : 1250) +
+      (mediaRef.current ? mediaRef.current.offsetHeight : isMobile ? 1800 : 1300) +
+      (descriptionRef.current ? descriptionRef.current.offsetHeight : isMobile ? 1800 : 1300);
 
     if (window.scrollY > totalContentHeight) {
       setIsVisible({
@@ -114,7 +114,7 @@ export default function Develop() {
     <div className="container mx-auto p-4">
       <div className="container mx-auto max-w-5xl">
         <motion.div
-          id="our-quality"
+          id="our-development"
           className="container mx-auto"
           variants={containerVariants}
           initial={isVisible.container ? "visible" : "hidden"}
@@ -170,7 +170,7 @@ export default function Develop() {
           </motion.div>
 
           <motion.div
-            className="text-sm text-gray-500"
+            className="text-sm text-center mb-8"
             variants={descriptionVariants}
             initial={isVisible.description ? "visible" : "hidden"}
             animate={isVisible.description ? "visible" : "hidden"}
