@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import Modal from "./ModalImage";
@@ -18,6 +18,10 @@ export default function Product() {
         gridImages: false,
         description: false,
     });
+
+    const containerRef = useRef(null);
+    const gridRef = useRef(null);
+    const descriptionRef = useRef(null);
 
     const products = [product1, product2, product3, product4];
     const handleImageClick = (imageSrc) => {
@@ -39,11 +43,12 @@ export default function Product() {
     useEffect(() => {
         const scrollPosition = window.scrollY;
         const windowHeight = window.innerHeight;
+        const isMobile = window.innerWidth <= 768;
 
-        const containerThreshold = 0 * windowHeight;
-        const imageThreshold = 0 * windowHeight;
-        const gridImagesThreshold = 0.6 * windowHeight;
-        const descriptionThreshold = 0.6 * windowHeight;
+        const containerThreshold = isMobile ? 0.4 * windowHeight : 0 * windowHeight;
+        const imageThreshold = isMobile ? 0.4 * windowHeight : 0 * windowHeight;
+        const gridImagesThreshold = isMobile ? 0.5 * windowHeight : 0.6 * windowHeight;
+        const descriptionThreshold = isMobile ? 0.8 * windowHeight : 0.6 * windowHeight;
 
         setIsVisible({
             container: scrollPosition >= containerThreshold,
@@ -51,6 +56,25 @@ export default function Product() {
             gridImages: scrollPosition >= gridImagesThreshold,
             description: scrollPosition >= descriptionThreshold,
         });
+    }, [scrollY]);
+
+    useEffect(() => {
+        const windowHeight = window.innerHeight;
+        const isMobile = window.innerWidth <= 768;
+        const totalContentHeight =
+            windowHeight +
+            (containerRef.current ? containerRef.current.offsetHeight : isMobile ? 500 : 200) +
+            (gridRef.current ? gridRef.current.offsetHeight : isMobile ? 530 : 200) +
+            (descriptionRef.current ? descriptionRef.current.offsetHeight : isMobile ? 550 : 200);
+
+        if (window.scrollY > totalContentHeight) {
+            setIsVisible({
+                container: false,
+                image: false,
+                gridImages: false,
+                description: false,
+            });
+        }
     }, [scrollY]);
 
     const containerVariants = {
@@ -77,14 +101,15 @@ export default function Product() {
     };
 
     return (
-        <div className="container mx-auto p-4 relative z-1"> 
-            <div className="container mx-auto max-w-5xl relative z-1"> 
+        <div className="container mx-auto p-4 relative z-1">
+            <div className="container mx-auto max-w-5xl relative z-1">
                 <motion.div
                     id="our-products"
                     className="container mx-auto"
                     variants={containerVariants}
                     initial={isVisible.container ? "visible" : "hidden"}
                     animate={isVisible.container ? "visible" : "hidden"}
+                    ref={containerRef}
                 >
                     <h1 className="lg:text-2xl sm:text-md font-semibold mb-2">Our Products</h1>
                 </motion.div>
@@ -116,7 +141,7 @@ export default function Product() {
                                 whileHover="hover"
                                 onClick={() => handleImageClick(product)}
                             >
-                                <Image src={product} alt={`Product ${index + 1}`} width={200} className="rounded-xl" />
+                                <Image src={product} alt={`Product ${index + 1}`} className="rounded-xl" />
                             </motion.div>
 
                         ))}
@@ -128,6 +153,7 @@ export default function Product() {
                         initial={isVisible.description ? "visible" : "hidden"}
                         animate={isVisible.description ? "visible" : "hidden"}
                         style={{ transform: `translateX(${scrollY * 0.2}px)` }}
+                        ref={descriptionRef}
                     >
                         <div className="flex gap-4 text-sm">
                             <motion.div

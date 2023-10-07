@@ -20,7 +20,7 @@
 
 body {
   font-family: 'Morrison', sans-serif;
-  color: lightgrey;
+  color: rgb(169, 169, 169);
   background: linear-gradient(
       to bottom,
       transparent,
@@ -28,6 +28,14 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+
+.big-bullet::before {
+  content: "•";
+  font-size: 1.5rem;
+  margin-right: 0.5rem;
+  justify-content: center;
+}
+
 
 .modalOverlay {
   position: fixed;

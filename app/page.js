@@ -2,7 +2,7 @@
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import Product from "@/components/Product";
-import OurWork from "@/components/OurWork-backup";
+import OurWork from "@/components/OurWork";
 import VanillaProducts from "@/components/Vanilla";
 import Filler from "@/components/Filler";
 

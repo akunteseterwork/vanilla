@@ -32,6 +32,7 @@ export default function Modal({ imageUrl, onClose }) {
     };
   }, [onClose]);
 
+
   return (
     <AnimatePresence>
       <motion.div
@@ -52,7 +53,7 @@ export default function Modal({ imageUrl, onClose }) {
               <FaTimes />
             </div>
           </div>
-          <Image src={imageUrl} alt="Preview" className="modalImage" />
+          <Image src={imageUrl} alt="Preview" width="600" height="600" />
         </motion.div>
       </motion.div>
     </AnimatePresence>
