@@ -5,6 +5,7 @@ import Product from "@/components/Product";
 import OurWork from "@/components/OurWork";
 import VanillaProducts from "@/components/Vanilla";
 import Filler from "@/components/Filler";
+import Quality from "@/components/Quality";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       <Product />
       <OurWork />
       <VanillaProducts />
+      <Quality />
       <Filler />
     </main>
   );

@@ -25,7 +25,7 @@ export default function Navbar() {
   const links = [
     { text: "Our Products", href: "#our-products" },
     { text: "How we work", href: "#our-work" },
-    { text: "How we ensure Quality", href: "#" },
+    { text: "How we ensure Quality", href: "#our-quality" },
     { text: "How we develop", href: "#" },
     { text: "Team & Contact", href: "#" },
   ];
