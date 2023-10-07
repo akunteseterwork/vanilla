@@ -38,12 +38,12 @@ export default function Quality() {
     const windowHeight = window.innerHeight;
     const isMobile = window.innerWidth <= 768;
 
-    const containerThreshold = isMobile ? 2.3 * windowHeight : 3.5 * windowHeight;
-    const headerThreshold = isMobile ? 2.3 * windowHeight : 3.5 * windowHeight;
-    const description1Threshold = isMobile ? 2.4 * windowHeight : 4 * windowHeight;
-    const description2Threshold = isMobile ? 2.4 * windowHeight : 4 * windowHeight;
-    const description3Threshold = isMobile ? 2.6 * windowHeight : 4 * windowHeight;
-    const description4Threshold = isMobile ? 2.6 * windowHeight : 4 * windowHeight;
+    const containerThreshold = isMobile ? 5.5 * windowHeight : 3.5 * windowHeight;
+    const headerThreshold = isMobile ? 5.5 * windowHeight : 3.5 * windowHeight;
+    const description1Threshold = isMobile ? 6 * windowHeight : 4 * windowHeight;
+    const description2Threshold = isMobile ? 6.2 * windowHeight : 4 * windowHeight;
+    const description3Threshold = isMobile ? 6.4 * windowHeight : 4 * windowHeight;
+    const description4Threshold = isMobile ? 6.6 * windowHeight : 4 * windowHeight;
 
     setIsVisible({
       container: scrollPosition >= containerThreshold,
@@ -60,12 +60,12 @@ export default function Quality() {
     const isMobile = window.innerWidth <= 768;
     const totalContentHeight =
       windowHeight +
-      (containerRef.current ? containerRef.current.offsetHeight : isMobile ? 350 : 540) +
-      (headerRef.current ? headerRef.current.offsetHeight : isMobile ? 350 : 540) +
-      (description1Ref.current ? description1Ref.current.offsetHeight : isMobile ? 350 : 540) +
-      (description2Ref.current ? description2Ref.current.offsetHeight : isMobile ? 350 : 540) +
-      (description3Ref.current ? description3Ref.current.offsetHeight : isMobile ? 350 : 540) +
-      (description4Ref.current ? description4Ref.current.offsetHeight : isMobile ? 350 : 540);
+      (containerRef.current ? containerRef.current.offsetHeight : isMobile ? 850 : 540) +
+      (headerRef.current ? headerRef.current.offsetHeight : isMobile ? 850 : 540) +
+      (description1Ref.current ? description1Ref.current.offsetHeight : isMobile ? 850 : 540) +
+      (description2Ref.current ? description2Ref.current.offsetHeight : isMobile ? 850 : 540) +
+      (description3Ref.current ? description3Ref.current.offsetHeight : isMobile ? 850 : 540) +
+      (description4Ref.current ? description4Ref.current.offsetHeight : isMobile ? 850 : 540);
 
     if (window.scrollY > totalContentHeight) {
       setIsVisible({
@@ -86,26 +86,26 @@ export default function Quality() {
 
   const headerVariants = {
     hidden: { opacity: 0 },
-    visible: { opacity: 1, transition: { duration: 1, delay: 0.2 } },
+    visible: { opacity: 1, transition: { duration: 0.8, delay: 0.1 } },
   };
 
   const description1Variants = {
     hidden: { opacity: 0, x: -20 },
-    visible: { opacity: 1, x: 0, transition: { duration: 0.8, delay: 0.4 } },
+    visible: { opacity: 1, x: 0, transition: { duration: 0.4, delay: 0.2 } },
   };
 
   const description2Variants = {
-    hidden: { opacity: 0, x: 20 },
-    visible: { opacity: 1, x: 0, transition: { duration: 1.2, delay: 0.6 } },
+    hidden: { opacity: 0, y: 20 },
+    visible: { opacity: 1, y: 0, transition: { duration: 0.6, delay: 0.4 } },
   };
 
   const description3Variants = {
-    hidden: { opacity: 0, x: 20 },
-    visible: { opacity: 1, x: 0, transition: { duration: 1.6, delay: 1 } },
+    hidden: { opacity: 0, x: -20 },
+    visible: { opacity: 1, x: 0, transition: { duration: 0.8, delay: 0.6 } },
   };
   const description4Variants = {
-    hidden: { opacity: 0, x: 20 },
-    visible: { opacity: 1, x: 0, transition: { duration: 1.8, delay: 1.2 } },
+    hidden: { opacity: 0, y: -20 },
+    visible: { opacity: 1, y: 0, transition: { duration: 1, delay: 0.8 } },
   };
 
   return (
@@ -155,8 +155,8 @@ export default function Quality() {
           <motion.div
             className="flex flex-col justify-center space-y-2 text-sm mb-4"
             variants={description2Variants}
-            initial={isVisible.description1 ? "visible" : "hidden"}
-            animate={isVisible.description1 ? "visible" : "hidden"}
+            initial={isVisible.description2 ? "visible" : "hidden"}
+            animate={isVisible.description2 ? "visible" : "hidden"}
           >
           <h2 className="text-md font-bold">Quality orientated and double tested</h2>
             <div style={{ overflow: "hidden", textOverflow: "ellipsis", whiteSpace: "wrap", lineHeight: "1.6" }}>
@@ -171,8 +171,8 @@ export default function Quality() {
           <motion.div
             className="flex flex-col justify-center space-y-2 text-sm mb-4"
             variants={description3Variants}
-            initial={isVisible.description1 ? "visible" : "hidden"}
-            animate={isVisible.description1 ? "visible" : "hidden"}
+            initial={isVisible.description3 ? "visible" : "hidden"}
+            animate={isVisible.description3 ? "visible" : "hidden"}
           >
           <h2 className="text-md font-bold">Open to your concerns</h2>
             <div style={{ overflow: "hidden", textOverflow: "ellipsis", whiteSpace: "wrap" }}>
@@ -186,8 +186,8 @@ export default function Quality() {
           <motion.div
             className="flex flex-col justify-center space-y-2 text-sm mb-4"
             variants={description4Variants}
-            initial={isVisible.description1 ? "visible" : "hidden"}
-            animate={isVisible.description1 ? "visible" : "hidden"}
+            initial={isVisible.description4 ? "visible" : "hidden"}
+            animate={isVisible.description4 ? "visible" : "hidden"}
           >
           <h2 className="text-md font-bold">Focussed on Vanilla products</h2>
             <div style={{ overflow: "hidden", textOverflow: "ellipsis", whiteSpace: "wrap", lineHeight: "1.6" }}>
