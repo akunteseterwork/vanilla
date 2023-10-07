@@ -68,7 +68,6 @@ export default function VanillaProducts() {
     <div className="container mx-auto p-4">
       <div className="container mx-auto max-w-5xl">
         <motion.div
-          id="our-quality"
           className="container mx-auto"
           variants={containerVariants}
           initial={isVisible.container ? "visible" : "hidden"}
