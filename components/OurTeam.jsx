@@ -50,14 +50,14 @@ export default function OurTeam() {
     const windowHeight = window.innerHeight;
     const isMobile = window.innerWidth <= 1000;
 
-    const containerThreshold = isMobile ? 0 * windowHeight : 5.5 * windowHeight;
-    const headerThreshold = isMobile ? 0 * windowHeight : 5.6 * windowHeight;
-    const member1Threshold = isMobile ? 0 * windowHeight : 6.18 * windowHeight;
-    const member2Threshold = isMobile ? 0 * windowHeight : 6.2 * windowHeight;
-    const member3Threshold = isMobile ? 0 * windowHeight : 6.25 * windowHeight;
-    const member4Threshold = isMobile ? 0 * windowHeight : 6.3 * windowHeight;
-    const member5Threshold = isMobile ? 0 * windowHeight : 6.35 * windowHeight;
-    const member6Threshold = isMobile ? 0 * windowHeight : 6.4 * windowHeight;
+    const containerThreshold = isMobile ? 0 * windowHeight : 5 * windowHeight;
+    const headerThreshold = isMobile ? 0 * windowHeight : 5 * windowHeight;
+    const member1Threshold = isMobile ? 0 * windowHeight : 5.8 * windowHeight;
+    const member2Threshold = isMobile ? 0 * windowHeight : 5.82 * windowHeight;
+    const member3Threshold = isMobile ? 0 * windowHeight : 5.84 * windowHeight;
+    const member4Threshold = isMobile ? 0 * windowHeight : 5.86 * windowHeight;
+    const member5Threshold = isMobile ? 0 * windowHeight : 5.88 * windowHeight;
+    const member6Threshold = isMobile ? 0 * windowHeight : 5.89 * windowHeight;
 
     setIsVisible({
       container: scrollPosition >= containerThreshold,
@@ -76,14 +76,14 @@ export default function OurTeam() {
     const isMobile = window.innerWidth <= 1000;
     const totalContentHeight =
       windowHeight +
-      (containerRef.current ? containerRef.current.offsetHeight : isMobile ? 2700 : 1860) +
-      (headerRef.current ? headerRef.current.offsetHeight : isMobile ? 2700 : 1860) +
-      (member1Ref.current ? member1Ref.current.offsetHeight : isMobile ? 2700 : 1860) +
-      (member2Ref.current ? member2Ref.current.offsetHeight : isMobile ? 2700 : 1860) +
-      (member3Ref.current ? member3Ref.current.offsetHeight : isMobile ? 2700 : 1860) +
-      (member4Ref.current ? member4Ref.current.offsetHeight : isMobile ? 2700 : 1860) +
-      (member5Ref.current ? member5Ref.current.offsetHeight : isMobile ? 2700 : 1860) +
-      (member6Ref.current ? member6Ref.current.offsetHeight : isMobile ? 2700 : 1860);
+      (containerRef.current ? containerRef.current.offsetHeight : isMobile ? 3000 : 1860) +
+      (headerRef.current ? headerRef.current.offsetHeight : isMobile ? 3000 : 1860) +
+      (member1Ref.current ? member1Ref.current.offsetHeight : isMobile ? 3000 : 1860) +
+      (member2Ref.current ? member2Ref.current.offsetHeight : isMobile ? 3000 : 1860) +
+      (member3Ref.current ? member3Ref.current.offsetHeight : isMobile ? 3000 : 1860) +
+      (member4Ref.current ? member4Ref.current.offsetHeight : isMobile ? 3000 : 1860) +
+      (member5Ref.current ? member5Ref.current.offsetHeight : isMobile ? 3000 : 1860) +
+      (member6Ref.current ? member6Ref.current.offsetHeight : isMobile ? 3000 : 1860);
 
     if (window.scrollY > totalContentHeight) {
       setIsVisible({

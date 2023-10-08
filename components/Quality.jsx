@@ -41,9 +41,9 @@ export default function Quality() {
     const containerThreshold = isMobile ? 0 * windowHeight : 3.6 * windowHeight;
     const headerThreshold = isMobile ? 0 * windowHeight : 3.7 * windowHeight;
     const description1Threshold = isMobile ? 0 * windowHeight : 3.8 * windowHeight;
-    const description2Threshold = isMobile ? 0 * windowHeight : 4 * windowHeight;
-    const description3Threshold = isMobile ? 0 * windowHeight : 4 * windowHeight;
-    const description4Threshold = isMobile ? 0 * windowHeight : 4 * windowHeight;
+    const description2Threshold = isMobile ? 0 * windowHeight : 3.82 * windowHeight;
+    const description3Threshold = isMobile ? 0 * windowHeight : 3.84 * windowHeight;
+    const description4Threshold = isMobile ? 0 * windowHeight : 3.86 * windowHeight;
 
     setIsVisible({
       container: scrollPosition >= containerThreshold,
