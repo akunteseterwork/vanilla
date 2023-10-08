@@ -43,12 +43,12 @@ export default function Product() {
     useEffect(() => {
         const scrollPosition = window.scrollY;
         const windowHeight = window.innerHeight;
-        const isMobile = window.innerWidth <= 768;
+        const isMobile = window.innerWidth <= 1000;
 
-        const containerThreshold = isMobile ? 0.4 * windowHeight : 0 * windowHeight;
-        const imageThreshold = isMobile ? 0.4 * windowHeight : 0 * windowHeight;
-        const gridImagesThreshold = isMobile ? 0.5 * windowHeight : 0.6 * windowHeight;
-        const descriptionThreshold = isMobile ? 0.8 * windowHeight : 0.6 * windowHeight;
+        const containerThreshold = isMobile ? 0 * windowHeight : 0 * windowHeight;
+        const imageThreshold = isMobile ? 0 * windowHeight : 0 * windowHeight;
+        const gridImagesThreshold = isMobile ? 0 * windowHeight : 0.6 * windowHeight;
+        const descriptionThreshold = isMobile ? 0 * windowHeight : 0.6 * windowHeight;
 
         setIsVisible({
             container: scrollPosition >= containerThreshold,
@@ -60,7 +60,7 @@ export default function Product() {
 
     useEffect(() => {
         const windowHeight = window.innerHeight;
-        const isMobile = window.innerWidth <= 768;
+        const isMobile = window.innerWidth <= 1000;
         const totalContentHeight =
             windowHeight +
             (containerRef.current ? containerRef.current.offsetHeight : isMobile ? 500 : 200) +

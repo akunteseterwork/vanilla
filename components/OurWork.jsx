@@ -45,16 +45,16 @@ export default function OurWork() {
   useEffect(() => {
     const scrollPosition = window.scrollY;
     const windowHeight = window.innerHeight;
-    const isMobile = window.innerWidth <= 768;
+    const isMobile = window.innerWidth <= 1000;
 
-    const containerThreshold = isMobile ? 2.3 * windowHeight : 1.4 * windowHeight;
-    const headerThreshold = isMobile ? 2.3 * windowHeight : 1.6 * windowHeight;
-    const image1Threshold = isMobile ? 2.4 * windowHeight : 2 * windowHeight;
-    const image2Threshold = isMobile ? 2.5 * windowHeight : 2.4 * windowHeight;
-    const image3Threshold = isMobile ? 2.6 * windowHeight : 2.8 * windowHeight;
-    const description1Threshold = isMobile ? 2.4 * windowHeight : 2 * windowHeight;
-    const description2Threshold = isMobile ? 2.5 * windowHeight : 2.8 * windowHeight;
-    const description3Threshold = isMobile ? 2.6 * windowHeight : 4 * windowHeight;
+    const containerThreshold = isMobile ? 0 * windowHeight : 1.4 * windowHeight;
+    const headerThreshold = isMobile ? 0 * windowHeight : 1.6 * windowHeight;
+    const image1Threshold = isMobile ? 0 * windowHeight : 2 * windowHeight;
+    const image2Threshold = isMobile ? 0 * windowHeight : 2.4 * windowHeight;
+    const image3Threshold = isMobile ? 0 * windowHeight : 2.8 * windowHeight;
+    const description1Threshold = isMobile ? 0 * windowHeight : 2 * windowHeight;
+    const description2Threshold = isMobile ? 0 * windowHeight : 2.8 * windowHeight;
+    const description3Threshold = isMobile ? 0 * windowHeight : 4 * windowHeight;
 
     setIsVisible({
       container: scrollPosition >= containerThreshold,
@@ -70,7 +70,7 @@ export default function OurWork() {
 
   useEffect(() => {
     const windowHeight = window.innerHeight;
-    const isMobile = window.innerWidth <= 768;
+    const isMobile = window.innerWidth <= 1000;
     const totalContentHeight =
       windowHeight +
       (containerRef.current ? containerRef.current.offsetHeight : isMobile ? 350 : 200) +
@@ -167,7 +167,7 @@ export default function OurWork() {
         </motion.div>
         {selectedImage && <Modal imageUrl={selectedImage.src} onClose={() => setSelectedImage(null)} />}
 
-        <div className="flex flex-col md:flex-row lg:gap-4 sm:gap-0 justify-center items-center md:justify-between">
+        <div className="flex flex-col md:flex-row lg:gap-4 md:gap-4 sm:gap-0 justify-center items-center md:justify-between">
           <motion.div
             className="relative w-full h-40 mb-4"
             style={{ flexBasis: "200px", flexShrink: 0 }}
@@ -197,7 +197,7 @@ export default function OurWork() {
           </motion.div>
         </div>
 
-        <div className="flex flex-col md:flex-row lg:gap-4 sm:gap-0 justify-center items-center md:justify-between">
+        <div className="flex flex-col md:flex-row lg:gap-4 md:gap-4 sm:gap-0 justify-center items-center md:justify-between">
           <motion.div
             className="relative w-full h-40 mb-4"
             style={{ flexBasis: "200px", flexShrink: 0 }}
@@ -226,7 +226,7 @@ export default function OurWork() {
           </motion.div>
         </div>
 
-        <div className="flex flex-col md:flex-row lg:gap-4 sm:gap-0 justify-center items-center md:justify-between">
+        <div className="flex flex-col md:flex-row lg:gap-4 md:gap-4 sm:gap-0 justify-center items-center md:justify-between">
           <motion.div
             className="relative w-full h-40 mb-4"
             style={{ flexBasis: "200px", flexShrink: 0 }}

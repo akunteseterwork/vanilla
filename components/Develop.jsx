@@ -39,12 +39,12 @@ export default function Develop() {
   useEffect(() => {
     const scrollPosition = window.scrollY;
     const windowHeight = window.innerHeight;
-    const isMobile = window.innerWidth <= 768;
+    const isMobile = window.innerWidth <= 1000;
 
-    const containerThreshold = isMobile ? 7.1 * windowHeight : 4.6 * windowHeight;
-    const headerThreshold = isMobile ? 7.2 * windowHeight : 4.7 * windowHeight;
-    const mediaThreshold = isMobile ? 7.6 * windowHeight : 5.1 * windowHeight;
-    const descriptionThreshold = isMobile ? 7.7 * windowHeight : 5.1 * windowHeight;
+    const containerThreshold = isMobile ? 0 * windowHeight : 4.6 * windowHeight;
+    const headerThreshold = isMobile ? 0 * windowHeight : 4.7 * windowHeight;
+    const mediaThreshold = isMobile ? 0 * windowHeight : 5.1 * windowHeight;
+    const descriptionThreshold = isMobile ? 0 * windowHeight : 5.1 * windowHeight;
 
     setIsVisible({
       container: scrollPosition >= containerThreshold,
@@ -56,13 +56,13 @@ export default function Develop() {
 
   useEffect(() => {
     const windowHeight = window.innerHeight;
-    const isMobile = window.innerWidth <= 768;
+    const isMobile = window.innerWidth <= 1000;
     const totalContentHeight =
       windowHeight +
       (containerRef.current ? containerRef.current.offsetHeight : isMobile ? 1800 : 1250) +
       (headerRef.current ? headerRef.current.offsetHeight : isMobile ? 1800 : 1250) +
-      (mediaRef.current ? mediaRef.current.offsetHeight : isMobile ? 1800 : 1300) +
-      (descriptionRef.current ? descriptionRef.current.offsetHeight : isMobile ? 1800 : 1300);
+      (mediaRef.current ? mediaRef.current.offsetHeight : isMobile ? 1900 : 1350) +
+      (descriptionRef.current ? descriptionRef.current.offsetHeight : isMobile ? 1900 : 1350);
 
     if (window.scrollY > totalContentHeight) {
       setIsVisible({

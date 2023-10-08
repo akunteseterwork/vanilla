@@ -36,14 +36,14 @@ export default function Quality() {
   useEffect(() => {
     const scrollPosition = window.scrollY;
     const windowHeight = window.innerHeight;
-    const isMobile = window.innerWidth <= 768;
+    const isMobile = window.innerWidth <= 1000;
 
-    const containerThreshold = isMobile ? 4.55 * windowHeight : 3.6 * windowHeight;
-    const headerThreshold = isMobile ? 4.6 * windowHeight : 3.7 * windowHeight;
-    const description1Threshold = isMobile ? 4.8 * windowHeight : 3.8 * windowHeight;
-    const description2Threshold = isMobile ? 5 * windowHeight : 4 * windowHeight;
-    const description3Threshold = isMobile ? 5.4 * windowHeight : 4 * windowHeight;
-    const description4Threshold = isMobile ? 5.4 * windowHeight : 4 * windowHeight;
+    const containerThreshold = isMobile ? 0 * windowHeight : 3.6 * windowHeight;
+    const headerThreshold = isMobile ? 0 * windowHeight : 3.7 * windowHeight;
+    const description1Threshold = isMobile ? 0 * windowHeight : 3.8 * windowHeight;
+    const description2Threshold = isMobile ? 0 * windowHeight : 4 * windowHeight;
+    const description3Threshold = isMobile ? 0 * windowHeight : 4 * windowHeight;
+    const description4Threshold = isMobile ? 0 * windowHeight : 4 * windowHeight;
 
     setIsVisible({
       container: scrollPosition >= containerThreshold,
@@ -57,7 +57,7 @@ export default function Quality() {
 
   useEffect(() => {
     const windowHeight = window.innerHeight;
-    const isMobile = window.innerWidth <= 768;
+    const isMobile = window.innerWidth <= 1000;
     const totalContentHeight =
       windowHeight +
       (containerRef.current ? containerRef.current.offsetHeight : isMobile ? 900 : 540) +

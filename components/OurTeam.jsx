@@ -48,16 +48,16 @@ export default function OurTeam() {
   useEffect(() => {
     const scrollPosition = window.scrollY;
     const windowHeight = window.innerHeight;
-    const isMobile = window.innerWidth <= 768;
+    const isMobile = window.innerWidth <= 1000;
 
-    const containerThreshold = isMobile ? 8 * windowHeight : 5.5 * windowHeight;
-    const headerThreshold = isMobile ? 8.1 * windowHeight : 5.6 * windowHeight;
-    const member1Threshold = isMobile ? 8.5 * windowHeight : 6.18 * windowHeight;
-    const member2Threshold = isMobile ? 8.6 * windowHeight : 6.2 * windowHeight;
-    const member3Threshold = isMobile ? 9.1 * windowHeight : 6.25 * windowHeight;
-    const member4Threshold = isMobile ? 9.2 * windowHeight : 6.3 * windowHeight;
-    const member5Threshold = isMobile ? 9.4 * windowHeight : 6.35 * windowHeight;
-    const member6Threshold = isMobile ? 9.5 * windowHeight : 6.4 * windowHeight;
+    const containerThreshold = isMobile ? 0 * windowHeight : 5.5 * windowHeight;
+    const headerThreshold = isMobile ? 0 * windowHeight : 5.6 * windowHeight;
+    const member1Threshold = isMobile ? 0 * windowHeight : 6.18 * windowHeight;
+    const member2Threshold = isMobile ? 0 * windowHeight : 6.2 * windowHeight;
+    const member3Threshold = isMobile ? 0 * windowHeight : 6.25 * windowHeight;
+    const member4Threshold = isMobile ? 0 * windowHeight : 6.3 * windowHeight;
+    const member5Threshold = isMobile ? 0 * windowHeight : 6.35 * windowHeight;
+    const member6Threshold = isMobile ? 0 * windowHeight : 6.4 * windowHeight;
 
     setIsVisible({
       container: scrollPosition >= containerThreshold,
@@ -73,7 +73,7 @@ export default function OurTeam() {
 
   useEffect(() => {
     const windowHeight = window.innerHeight;
-    const isMobile = window.innerWidth <= 768;
+    const isMobile = window.innerWidth <= 1000;
     const totalContentHeight =
       windowHeight +
       (containerRef.current ? containerRef.current.offsetHeight : isMobile ? 2700 : 1860) +

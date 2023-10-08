@@ -26,10 +26,10 @@ export default function VanillaProducts() {
   useEffect(() => {
     const scrollPosition = window.scrollY;
     const windowHeight = window.innerHeight;
-    const isMobile = window.innerWidth <= 768;
+    const isMobile = window.innerWidth <= 1000;
 
-    const containerThreshold = isMobile ? 4.3 * windowHeight : 3 * windowHeight;
-    const descriptionThreshold = isMobile ? 4.3 * windowHeight : 3 * windowHeight;
+    const containerThreshold = isMobile ? 0 * windowHeight : 3 * windowHeight;
+    const descriptionThreshold = isMobile ? 0 * windowHeight : 3 * windowHeight;
 
     setIsVisible({
       container: scrollPosition >= containerThreshold,
@@ -39,7 +39,7 @@ export default function VanillaProducts() {
 
   useEffect(() => {
     const windowHeight = window.innerHeight;
-    const isMobile = window.innerWidth <= 768;
+    const isMobile = window.innerWidth <= 1000;
     const totalContentHeight =
       windowHeight +
       (containerRef.current ? containerRef.current.offsetHeight : isMobile ? 1850 : 1000) +
