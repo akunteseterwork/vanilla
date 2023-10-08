@@ -42,8 +42,8 @@ export default function VanillaProducts() {
     const isMobile = window.innerWidth <= 1000;
     const totalContentHeight =
       windowHeight +
-      (containerRef.current ? containerRef.current.offsetHeight : isMobile ? 1850 : 1000) +
-      (descriptionRef.current ? descriptionRef.current.offsetHeight : isMobile ? 1850 : 1000)
+      (containerRef.current ? containerRef.current.offsetHeight : isMobile ? 2500 : 1000) +
+      (descriptionRef.current ? descriptionRef.current.offsetHeight : isMobile ? 2500 : 1000)
 
     if (window.scrollY > totalContentHeight) {
       setIsVisible({

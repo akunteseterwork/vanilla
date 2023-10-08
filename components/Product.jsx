@@ -63,9 +63,9 @@ export default function Product() {
         const isMobile = window.innerWidth <= 1000;
         const totalContentHeight =
             windowHeight +
-            (containerRef.current ? containerRef.current.offsetHeight : isMobile ? 500 : 200) +
-            (gridRef.current ? gridRef.current.offsetHeight : isMobile ? 530 : 200) +
-            (descriptionRef.current ? descriptionRef.current.offsetHeight : isMobile ? 550 : 200);
+            (containerRef.current ? containerRef.current.offsetHeight : isMobile ? 1200 : 200) +
+            (gridRef.current ? gridRef.current.offsetHeight : isMobile ? 1200 : 200) +
+            (descriptionRef.current ? descriptionRef.current.offsetHeight : isMobile ? 1200 : 200);
 
         if (window.scrollY > totalContentHeight) {
             setIsVisible({

@@ -73,14 +73,14 @@ export default function OurWork() {
     const isMobile = window.innerWidth <= 1000;
     const totalContentHeight =
       windowHeight +
-      (containerRef.current ? containerRef.current.offsetHeight : isMobile ? 350 : 200) +
-      (headerRef.current ? headerRef.current.offsetHeight : isMobile ? 350 : 200) +
-      (image1Ref.current ? image1Ref.current.offsetHeight : isMobile ? 350 : 200) +
-      (image2Ref.current ? image2Ref.current.offsetHeight : isMobile ? 350 : 200) +
-      (image3Ref.current ? image3Ref.current.offsetHeight : isMobile ? 350 : 200) +
-      (description1Ref.current ? description1Ref.current.offsetHeight : isMobile ? 350 : 200) +
-      (description2Ref.current ? description2Ref.current.offsetHeight : isMobile ? 350 : 200) +
-      (description3Ref.current ? description3Ref.current.offsetHeight : isMobile ? 350 : 200);
+      (containerRef.current ? containerRef.current.offsetHeight : isMobile ? 450 : 200) +
+      (headerRef.current ? headerRef.current.offsetHeight : isMobile ? 450 : 200) +
+      (image1Ref.current ? image1Ref.current.offsetHeight : isMobile ? 450 : 200) +
+      (image2Ref.current ? image2Ref.current.offsetHeight : isMobile ? 450 : 200) +
+      (image3Ref.current ? image3Ref.current.offsetHeight : isMobile ? 450 : 200) +
+      (description1Ref.current ? description1Ref.current.offsetHeight : isMobile ? 450 : 200) +
+      (description2Ref.current ? description2Ref.current.offsetHeight : isMobile ? 450 : 200) +
+      (description3Ref.current ? description3Ref.current.offsetHeight : isMobile ? 450 : 200);
 
     if (window.scrollY > totalContentHeight) {
       setIsVisible({

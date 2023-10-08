@@ -60,12 +60,12 @@ export default function Quality() {
     const isMobile = window.innerWidth <= 1000;
     const totalContentHeight =
       windowHeight +
-      (containerRef.current ? containerRef.current.offsetHeight : isMobile ? 900 : 540) +
-      (headerRef.current ? headerRef.current.offsetHeight : isMobile ? 900 : 540) +
-      (description1Ref.current ? description1Ref.current.offsetHeight : isMobile ? 900 : 540) +
-      (description2Ref.current ? description2Ref.current.offsetHeight : isMobile ? 900 : 540) +
-      (description3Ref.current ? description3Ref.current.offsetHeight : isMobile ? 900 : 540) +
-      (description4Ref.current ? description4Ref.current.offsetHeight : isMobile ? 900 : 540);
+      (containerRef.current ? containerRef.current.offsetHeight : isMobile ? 1500 : 540) +
+      (headerRef.current ? headerRef.current.offsetHeight : isMobile ? 1500 : 540) +
+      (description1Ref.current ? description1Ref.current.offsetHeight : isMobile ? 1500 : 540) +
+      (description2Ref.current ? description2Ref.current.offsetHeight : isMobile ? 1500 : 540) +
+      (description3Ref.current ? description3Ref.current.offsetHeight : isMobile ? 1500 : 540) +
+      (description4Ref.current ? description4Ref.current.offsetHeight : isMobile ? 1500 : 540);
 
     if (window.scrollY > totalContentHeight) {
       setIsVisible({

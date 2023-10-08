@@ -76,14 +76,14 @@ export default function OurTeam() {
     const isMobile = window.innerWidth <= 1000;
     const totalContentHeight =
       windowHeight +
-      (containerRef.current ? containerRef.current.offsetHeight : isMobile ? 3000 : 1860) +
-      (headerRef.current ? headerRef.current.offsetHeight : isMobile ? 3000 : 1860) +
-      (member1Ref.current ? member1Ref.current.offsetHeight : isMobile ? 3000 : 1860) +
-      (member2Ref.current ? member2Ref.current.offsetHeight : isMobile ? 3000 : 1860) +
-      (member3Ref.current ? member3Ref.current.offsetHeight : isMobile ? 3000 : 1860) +
-      (member4Ref.current ? member4Ref.current.offsetHeight : isMobile ? 3000 : 1860) +
-      (member5Ref.current ? member5Ref.current.offsetHeight : isMobile ? 3000 : 1860) +
-      (member6Ref.current ? member6Ref.current.offsetHeight : isMobile ? 3000 : 1860);
+      (containerRef.current ? containerRef.current.offsetHeight : isMobile ? 3800 : 1860) +
+      (headerRef.current ? headerRef.current.offsetHeight : isMobile ? 3800 : 1860) +
+      (member1Ref.current ? member1Ref.current.offsetHeight : isMobile ? 3800 : 1860) +
+      (member2Ref.current ? member2Ref.current.offsetHeight : isMobile ? 3800 : 1860) +
+      (member3Ref.current ? member3Ref.current.offsetHeight : isMobile ? 3800 : 1860) +
+      (member4Ref.current ? member4Ref.current.offsetHeight : isMobile ? 3800 : 1860) +
+      (member5Ref.current ? member5Ref.current.offsetHeight : isMobile ? 3800 : 1860) +
+      (member6Ref.current ? member6Ref.current.offsetHeight : isMobile ? 3800 : 1860);
 
     if (window.scrollY > totalContentHeight) {
       setIsVisible({

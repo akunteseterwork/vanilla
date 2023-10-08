@@ -59,10 +59,10 @@ export default function Develop() {
     const isMobile = window.innerWidth <= 1000;
     const totalContentHeight =
       windowHeight +
-      (containerRef.current ? containerRef.current.offsetHeight : isMobile ? 1800 : 1250) +
-      (headerRef.current ? headerRef.current.offsetHeight : isMobile ? 1800 : 1250) +
-      (mediaRef.current ? mediaRef.current.offsetHeight : isMobile ? 1900 : 1350) +
-      (descriptionRef.current ? descriptionRef.current.offsetHeight : isMobile ? 1900 : 1350);
+      (containerRef.current ? containerRef.current.offsetHeight : isMobile ? 2400 : 1250) +
+      (headerRef.current ? headerRef.current.offsetHeight : isMobile ? 2400 : 1250) +
+      (mediaRef.current ? mediaRef.current.offsetHeight : isMobile ? 2400 : 1350) +
+      (descriptionRef.current ? descriptionRef.current.offsetHeight : isMobile ? 2400 : 1350);
 
     if (window.scrollY > totalContentHeight) {
       setIsVisible({
