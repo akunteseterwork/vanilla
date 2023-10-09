@@ -49,12 +49,12 @@ export default function OurWork() {
 
     const containerThreshold = isMobile ? 0 * windowHeight : 1.4 * windowHeight;
     const headerThreshold = isMobile ? 0 * windowHeight : 1.6 * windowHeight;
-    const image1Threshold = isMobile ? 0 * windowHeight : 2 * windowHeight;
-    const image2Threshold = isMobile ? 0 * windowHeight : 2.4 * windowHeight;
-    const image3Threshold = isMobile ? 0 * windowHeight : 2.8 * windowHeight;
-    const description1Threshold = isMobile ? 0 * windowHeight : 2 * windowHeight;
-    const description2Threshold = isMobile ? 0 * windowHeight : 2.8 * windowHeight;
-    const description3Threshold = isMobile ? 0 * windowHeight : 4 * windowHeight;
+    const image1Threshold = isMobile ? 0 * windowHeight : 1.6 * windowHeight;
+    const image2Threshold = isMobile ? 0 * windowHeight : 1.6 * windowHeight;
+    const image3Threshold = isMobile ? 0 * windowHeight : 1.7 * windowHeight;
+    const description1Threshold = isMobile ? 0 * windowHeight : 1.7 * windowHeight;
+    const description2Threshold = isMobile ? 0 * windowHeight : 1.8 * windowHeight;
+    const description3Threshold = isMobile ? 0 * windowHeight : 1.9 * windowHeight;
 
     setIsVisible({
       container: scrollPosition >= containerThreshold,

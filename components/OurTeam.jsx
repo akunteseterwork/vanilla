@@ -50,14 +50,14 @@ export default function OurTeam() {
     const windowHeight = window.innerHeight;
     const isMobile = window.innerWidth <= 1000;
 
-    const containerThreshold = isMobile ? 0 * windowHeight : 5 * windowHeight;
-    const headerThreshold = isMobile ? 0 * windowHeight : 5 * windowHeight;
-    const member1Threshold = isMobile ? 0 * windowHeight : 5.8 * windowHeight;
-    const member2Threshold = isMobile ? 0 * windowHeight : 5.82 * windowHeight;
-    const member3Threshold = isMobile ? 0 * windowHeight : 5.84 * windowHeight;
-    const member4Threshold = isMobile ? 0 * windowHeight : 5.86 * windowHeight;
-    const member5Threshold = isMobile ? 0 * windowHeight : 5.88 * windowHeight;
-    const member6Threshold = isMobile ? 0 * windowHeight : 5.89 * windowHeight;
+    const containerThreshold = isMobile ? 0 * windowHeight : 4.5 * windowHeight;
+    const headerThreshold = isMobile ? 0 * windowHeight : 4.5 * windowHeight;
+    const member1Threshold = isMobile ? 0 * windowHeight : 4.8 * windowHeight;
+    const member2Threshold = isMobile ? 0 * windowHeight : 4.82 * windowHeight;
+    const member3Threshold = isMobile ? 0 * windowHeight : 4.84 * windowHeight;
+    const member4Threshold = isMobile ? 0 * windowHeight : 4.86 * windowHeight;
+    const member5Threshold = isMobile ? 0 * windowHeight : 4.88 * windowHeight;
+    const member6Threshold = isMobile ? 0 * windowHeight : 4.89 * windowHeight;
 
     setIsVisible({
       container: scrollPosition >= containerThreshold,

@@ -41,10 +41,10 @@ export default function Develop() {
     const windowHeight = window.innerHeight;
     const isMobile = window.innerWidth <= 1000;
 
-    const containerThreshold = isMobile ? 0 * windowHeight : 4.6 * windowHeight;
-    const headerThreshold = isMobile ? 0 * windowHeight : 4.7 * windowHeight;
-    const mediaThreshold = isMobile ? 0 * windowHeight : 5.1 * windowHeight;
-    const descriptionThreshold = isMobile ? 0 * windowHeight : 5.1 * windowHeight;
+    const containerThreshold = isMobile ? 0 * windowHeight : 4 * windowHeight;
+    const headerThreshold = isMobile ? 0 * windowHeight : 4 * windowHeight;
+    const mediaThreshold = isMobile ? 0 * windowHeight : 4.2 * windowHeight;
+    const descriptionThreshold = isMobile ? 0 * windowHeight : 4.3 * windowHeight;
 
     setIsVisible({
       container: scrollPosition >= containerThreshold,

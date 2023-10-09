@@ -28,8 +28,8 @@ export default function VanillaProducts() {
     const windowHeight = window.innerHeight;
     const isMobile = window.innerWidth <= 1000;
 
-    const containerThreshold = isMobile ? 0 * windowHeight : 3 * windowHeight;
-    const descriptionThreshold = isMobile ? 0 * windowHeight : 3 * windowHeight;
+    const containerThreshold = isMobile ? 0 * windowHeight : 2.5 * windowHeight;
+    const descriptionThreshold = isMobile ? 0 * windowHeight : 2.5 * windowHeight;
 
     setIsVisible({
       container: scrollPosition >= containerThreshold,
