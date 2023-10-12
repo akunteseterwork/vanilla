@@ -161,9 +161,8 @@ export default function OurTeam() {
             />
             <div className="text-center text-normal text-white text-sm mt-2">
               <span>Lina & Donat Eltschinger</span>
-              <br />
-              <span className="font-light">Position</span>
             </div>
+              <span className="font-light">Position</span>
           </motion.div>
           <motion.div
             className="flex flex-col items-center justify-center mb-20"

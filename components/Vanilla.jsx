@@ -83,13 +83,25 @@ export default function VanillaProducts() {
             initial={isVisible.description ? "visible" : "hidden"}
             animate={isVisible.description ? "visible" : "hidden"}
           >
-            <div style={{ overflow: "hidden", textOverflow: "ellipsis", whiteSpace: "wrap", lineHeight: "1.8", fontSize: "14px", fontWeight: "300"}}>
-            ※ The Vanilla Planifolia (spiced vanilla) is a demanding plant. To ensure sustainability in cultivation, a mixture of turmeric (against stem rot) and salt, tobacco and citrus fruits (against fungal attack) is used instead of pesticides. It is fertilized with an organic mixture of chicken manure and offcuts from the rice harvest. <br/>
-            ※ The ripened vanilla beans are usually harvested at the end of the dry season, in August/September. Algi and his team examine each flower stem and determine the optimal harvest time and selection based on our quality requirements. Because of the higher production costs, growers receive a higher price. <br/>
-            ※ The pods are then cleaned and selected. Beans selected for Mount Lawu are blanched in water at 65 degrees for about 2.5 minutes. <br/>
-            ※ Next step: The pods are dried. The fermentation process follows in wooden boxes with coconut fibers and wood chips. This process is repeated every 24 hours until optimal quality is achieved. This process can take up to seven months. <br/>
-            ※ Now the pods are checked for external quality characteristics and water content. The external laboratory control takes place at Laboratory XXX. <br/>
-            ※ The pods are stored professionally and hygienically in our warehouse in Sukabumi at a constant temperature of 20 degrees Celsius. <br/>
+            <div style={{ overflow: "hidden", textOverflow: "ellipsis", whiteSpace: "wrap", lineHeight: "1.4", fontSize: "14px", fontWeight: "300"}}>
+            <span>※ The Vanilla Planifolia (spiced vanilla) is a demanding plant. To ensure sustainability in cultivation, a mixture of turmeric (against stem rot) and salt, tobacco and citrus fruits (against fungal attack) is used instead of pesticides. It is fertilized with an organic mixture of chicken manure and offcuts from the rice harvest. </span>
+            </div>
+            <div style={{ overflow: "hidden", textOverflow: "ellipsis", whiteSpace: "wrap", lineHeight: "1.4", fontSize: "14px", fontWeight: "300"}}>
+            <span>※ The ripened vanilla beans are usually harvested at the end of the dry season, in August/September. Algi and his team examine each flower stem and determine the optimal harvest time and selection based on our quality requirements. Because of the higher production costs, growers receive a higher price. </span>
+            </div>
+            <div style={{ overflow: "hidden", textOverflow: "ellipsis", whiteSpace: "wrap", lineHeight: "1.4", fontSize: "14px", fontWeight: "300"}}>
+            <span>※ The pods are then cleaned and selected. Beans selected for Mount Lawu are blanched in water at 65 degrees for about 2.5 minutes. </span>
+            </div>
+            <div style={{ overflow: "hidden", textOverflow: "ellipsis", whiteSpace: "wrap", lineHeight: "1.4", fontSize: "14px", fontWeight: "300"}}>
+            <span>※ Next step: The pods are dried. The fermentation process follows in wooden boxes with coconut fibers and wood chips. This process is repeated every 24 hours until optimal quality is achieved. This process can take up to seven months. </span>
+            </div>
+            <div style={{ overflow: "hidden", textOverflow: "ellipsis", whiteSpace: "wrap", lineHeight: "1.4", fontSize: "14px", fontWeight: "300"}}>
+            <span>※ Now the pods are checked for external quality characteristics and water content. The external laboratory control takes place at Laboratory XXX. </span>
+            </div>
+            <div style={{ overflow: "hidden", textOverflow: "ellipsis", whiteSpace: "wrap", lineHeight: "1.4", fontSize: "14px", fontWeight: "300"}}>
+            <span>※ The pods are stored professionally and hygienically in our warehouse in Sukabumi at a constant temperature of 20 degrees Celsius.</span>
+            </div>
+            <div style={{ overflow: "hidden", textOverflow: "ellipsis", whiteSpace: "wrap", lineHeight: "1.4", fontSize: "14px", fontWeight: "300"}}>
             ※ Delivery takes place within 5 working days of receipt of the order. Every delivery is double-checked in Switzerland. Delivery takes place in vacuum-packed PET films of 500 grams each. These are marked with the exact date of origin and packaging. The laboratory test reports and the specification list are included with every delivery.
             </div>
           </motion.div>
