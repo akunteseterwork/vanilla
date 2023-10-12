@@ -63,9 +63,9 @@ export default function Product() {
         const isMobile = window.innerWidth <= 1000;
         const totalContentHeight =
             windowHeight +
-            (containerRef.current ? containerRef.current.offsetHeight : isMobile ? 1200 : 200) +
-            (gridRef.current ? gridRef.current.offsetHeight : isMobile ? 1200 : 200) +
-            (descriptionRef.current ? descriptionRef.current.offsetHeight : isMobile ? 1200 : 200);
+            (containerRef.current ? containerRef.current.offsetHeight : isMobile ? 1200 : 600) +
+            (gridRef.current ? gridRef.current.offsetHeight : isMobile ? 1200 : 600) +
+            (descriptionRef.current ? descriptionRef.current.offsetHeight : isMobile ? 1200 : 600);
 
         if (window.scrollY > totalContentHeight) {
             setIsVisible({
@@ -111,7 +111,7 @@ export default function Product() {
                     animate={isVisible.container ? "visible" : "hidden"}
                     ref={containerRef}
                 >
-                    <h1 className="lg:text-2xl sm:text-md font-semibold mb-2">Our Products</h1>
+                    <h1 className="lg:text-2xl text-sm font-normal mb-2 text-white">Our Products</h1>
                 </motion.div>
                 <motion.div
                     className="relative w-full h-64 md:h-96 mb-6"
@@ -163,24 +163,24 @@ export default function Product() {
                                 animate={isVisible.description ? "visible" : "hidden"}
                             >
                                 <div className="grid grid-cols-2 gap-4 text-sm">
-                                    <div className="font-semibold">Product:</div>
-                                    <div>Vanilla Planifolia Java, Gourmet, Grade A+</div>
-                                    <div className="font-semibold">Content:</div>
-                                    <div>Gourmet Vanilla Pods origin Java</div>
-                                    <div className="font-semibold">Colour, Texture, Aroma:</div>
-                                    <div>
+                                    <div className="font-normal text-sm">Product:</div>
+                                    <div className="text-sm font-light">Vanilla Planifolia Java, Gourmet, Grade A+</div>
+                                    <div className="font-normal text-sm">Content:</div>
+                                    <div className="text-sm font-light">Gourmet Vanilla Pods origin Java</div>
+                                    <div className="font-normal text-sm">Colour, Texture, Aroma:</div>
+                                    <div className="text-sm font-light">
                                         Glossy dark brown to black. Oily, structured, soft, full, and slightly leathery surface. Earthy, intense, and smoky vanilla profile with notes of chocolate and mocha. Spicy, strong, rich flavors.
                                     </div>
-                                    <div className="font-semibold">Packing Material:</div>
-                                    <div>Vacuumsed batches / 1 kg</div>
-                                    <div className="font-semibold">Index of Moisture:</div>
-                                    <div>25% - 30%</div>
-                                    <div className="font-semibold">Index of Vanillin:</div>
-                                    <div>min. 2.1%</div>
-                                    <div className="font-semibold">Measurement:</div>
-                                    <div>Length 20 – 22 cm / 6 grams</div>
-                                    <div className="font-semibold">Labels:</div>
-                                    <div>Bio EU Zert. Norm or Bio Javanese Norm</div>
+                                    <div className="font-normal text-sm">Packing Material:</div>
+                                    <div className="text-sm font-light">Vacuumsed batches / 1 kg</div>
+                                    <div className="font-normal text-sm">Index of Moisture:</div>
+                                    <div className="text-sm font-light">25% - 30%</div>
+                                    <div className="font-normal text-sm">Index of Vanillin:</div>
+                                    <div className="text-sm font-light">min. 2.1%</div>
+                                    <div className="font-normal text-sm">Measurement:</div>
+                                    <div className="text-sm font-light">Length 20 – 22 cm / 6 grams</div>
+                                    <div className="font-normal text-sm">Labels:</div>
+                                    <div className="text-sm font-light">Bio EU Zert. Norm or Bio Javanese Norm</div>
                                 </div>
                             </motion.div>
                         </div>

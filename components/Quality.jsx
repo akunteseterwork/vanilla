@@ -60,12 +60,12 @@ export default function Quality() {
     const isMobile = window.innerWidth <= 1000;
     const totalContentHeight =
       windowHeight +
-      (containerRef.current ? containerRef.current.offsetHeight : isMobile ? 1500 : 540) +
-      (headerRef.current ? headerRef.current.offsetHeight : isMobile ? 1500 : 540) +
-      (description1Ref.current ? description1Ref.current.offsetHeight : isMobile ? 1500 : 540) +
-      (description2Ref.current ? description2Ref.current.offsetHeight : isMobile ? 1500 : 540) +
-      (description3Ref.current ? description3Ref.current.offsetHeight : isMobile ? 1500 : 540) +
-      (description4Ref.current ? description4Ref.current.offsetHeight : isMobile ? 1500 : 540);
+      (containerRef.current ? containerRef.current.offsetHeight : isMobile ? 1500 : 700) +
+      (headerRef.current ? headerRef.current.offsetHeight : isMobile ? 1500 : 700) +
+      (description1Ref.current ? description1Ref.current.offsetHeight : isMobile ? 1500 : 700) +
+      (description2Ref.current ? description2Ref.current.offsetHeight : isMobile ? 1500 : 700) +
+      (description3Ref.current ? description3Ref.current.offsetHeight : isMobile ? 1500 : 700) +
+      (description4Ref.current ? description4Ref.current.offsetHeight : isMobile ? 1500 : 700);
 
     if (window.scrollY > totalContentHeight) {
       setIsVisible({
@@ -118,7 +118,7 @@ export default function Quality() {
           initial={isVisible.container ? "visible" : "hidden"}
           animate={isVisible.container ? "visible" : "hidden"}
         >
-          <h1 className="lg:text-2xl sm:text-md font-semibold mb-2">How We Ensure Quality</h1>
+          <h1 className="lg:text-2xl sm:text-md font-semibold mb-2 text-white">How We Ensure Quality</h1>
         </motion.div>
         <motion.div
           className="relative w-full h-64 md:h-96 mb-6"
@@ -142,8 +142,8 @@ export default function Quality() {
             initial={isVisible.description1 ? "visible" : "hidden"}
             animate={isVisible.description1 ? "visible" : "hidden"}
           >
-            <h2 className="text-md font-bold">Personal and on cordial terms</h2>
-            <div style={{ overflow: "hidden", textOverflow: "ellipsis", whiteSpace: "wrap", lineHeight: "1.6" }}>
+            <h2 className="text-lg font-medium text-white">Personal and on cordial terms</h2>
+            <div style={{ overflow: "hidden", textOverflow: "ellipsis", whiteSpace: "wrap", lineHeight: "1.6", fontSize: "14px", fontWeight: "300" }}>
               ※ We maintain personal and close relationships with our farmers and suppliers. <br />
               ※ Traceability is guaranteed at all times in the production and supply chain. Each delivery is marked with the exact origin of the batches and packing date.<br />
               ※ We assure to operate in a way which is ethical, transparent and sustainable. In order to maintain long-term supply chain and cooperation, we want to ensure sustainable production. Therefore, we commit our farmers to reduce the environmental impact. Pesticides are not used in either cultivation or processing.<br />
@@ -158,8 +158,8 @@ export default function Quality() {
             initial={isVisible.description2 ? "visible" : "hidden"}
             animate={isVisible.description2 ? "visible" : "hidden"}
           >
-            <h2 className="text-md font-bold">Quality orientated and double tested</h2>
-            <div style={{ overflow: "hidden", textOverflow: "ellipsis", whiteSpace: "wrap", lineHeight: "1.6" }}>
+            <h2 className="text-lg font-medium text-white">Quality orientated and double tested</h2>
+            <div style={{ overflow: "hidden", textOverflow: "ellipsis", whiteSpace: "wrap", lineHeight: "1.6", fontSize: "14px", fontWeight: "300" }}>
               ※ Our products are grown in agroecologically diversified gardens. <br />
               ※ Each delivery is handpicked by our local experts. <br />
               ※ On request, we deliver certified organic products according to EU standards.
@@ -174,8 +174,8 @@ export default function Quality() {
             initial={isVisible.description3 ? "visible" : "hidden"}
             animate={isVisible.description3 ? "visible" : "hidden"}
           >
-            <h2 className="text-md font-bold">Open to your concerns</h2>
-            <div style={{ overflow: "hidden", textOverflow: "ellipsis", whiteSpace: "wrap" }}>
+            <h2 className="text-lg font-medium text-white">Open to your concerns</h2>
+            <div style={{ overflow: "hidden", textOverflow: "ellipsis", whiteSpace: "wrap", fontSize: "14px", fontWeight: "300" }}>
               ※ We deal with your inquiries and concerns quickly and easily with all the necessary information. <br />
               ※ With our competent and experienced partners in logistics for the food sector, reliable delivery is guaranteed. We take care of all questions and clarifications on logistics, import regulations, declarations and customs. <br />
               ※ We check your concerns with our partners in Indonesia. Let us know if you have any special requirements for labels.
@@ -189,8 +189,8 @@ export default function Quality() {
             initial={isVisible.description4 ? "visible" : "hidden"}
             animate={isVisible.description4 ? "visible" : "hidden"}
           >
-            <h2 className="text-md font-bold">Focussed on Vanilla products</h2>
-            <div style={{ overflow: "hidden", textOverflow: "ellipsis", whiteSpace: "wrap", lineHeight: "1.6" }}>
+            <h2 className="text-lg font-medium text-white">Focussed on Vanilla products</h2>
+            <div style={{ overflow: "hidden", textOverflow: "ellipsis", whiteSpace: "wrap", lineHeight: "1.6", fontSize: "14px", fontWeight: "300" }}>
               ※ Our vanilla beans are tested for the following characteristics before export in Indonesia: water content, vanillin content, texture, colour and weight. <br />
               ※ In Switzerland, our vanilla beans are regularly tested by Veritas Laboratory in Zurich.<br />
               ※ We provide the test results to our customers with every delivery.

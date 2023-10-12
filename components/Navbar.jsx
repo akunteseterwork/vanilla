@@ -90,7 +90,7 @@ export default function Navbar() {
                 >
                   {link.href.startsWith("#") ? (
                     <motion.a
-                    className="px-4 py-2"
+                    className="px-4 py-2 text-white font-normal"
                     whileHover={{
                       color: "#FFA500", 
                       scale: 1.1,

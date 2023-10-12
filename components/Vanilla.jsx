@@ -42,8 +42,8 @@ export default function VanillaProducts() {
     const isMobile = window.innerWidth <= 1000;
     const totalContentHeight =
       windowHeight +
-      (containerRef.current ? containerRef.current.offsetHeight : isMobile ? 2500 : 1000) +
-      (descriptionRef.current ? descriptionRef.current.offsetHeight : isMobile ? 2500 : 1000)
+      (containerRef.current ? containerRef.current.offsetHeight : isMobile ? 2500 : 1500) +
+      (descriptionRef.current ? descriptionRef.current.offsetHeight : isMobile ? 2500 : 1500)
 
     if (window.scrollY > totalContentHeight) {
       setIsVisible({
@@ -73,7 +73,7 @@ export default function VanillaProducts() {
           initial={isVisible.container ? "visible" : "hidden"}
           animate={isVisible.container ? "visible" : "hidden"}
         >
-          <h2 className="text-md font-bold mb-2">Vanilla Products</h2>
+          <h2 className="lg:text-2xl text-sm font-normal mb-2 text-white">Vanilla Products</h2>
         </motion.div>
 
         <div className="flex flex-col md:flex-row lg:gap-4 sm:gap-0 justify-center items-center md:justify-between">
@@ -83,7 +83,7 @@ export default function VanillaProducts() {
             initial={isVisible.description ? "visible" : "hidden"}
             animate={isVisible.description ? "visible" : "hidden"}
           >
-            <div style={{ overflow: "hidden", textOverflow: "ellipsis", whiteSpace: "wrap", lineHeight: "1.6"}}>
+            <div style={{ overflow: "hidden", textOverflow: "ellipsis", whiteSpace: "wrap", lineHeight: "1.8", fontSize: "14px", fontWeight: "300"}}>
             ※ The Vanilla Planifolia (spiced vanilla) is a demanding plant. To ensure sustainability in cultivation, a mixture of turmeric (against stem rot) and salt, tobacco and citrus fruits (against fungal attack) is used instead of pesticides. It is fertilized with an organic mixture of chicken manure and offcuts from the rice harvest. <br/>
             ※ The ripened vanilla beans are usually harvested at the end of the dry season, in August/September. Algi and his team examine each flower stem and determine the optimal harvest time and selection based on our quality requirements. Because of the higher production costs, growers receive a higher price. <br/>
             ※ The pods are then cleaned and selected. Beans selected for Mount Lawu are blanched in water at 65 degrees for about 2.5 minutes. <br/>

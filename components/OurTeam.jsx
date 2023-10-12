@@ -123,7 +123,7 @@ export default function OurTeam() {
           initial={isVisible.container ? "visible" : "hidden"}
           animate={isVisible.container ? "visible" : "hidden"}
         >
-          <h1 className="lg:text-2xl sm:text-md font-semibold mb-2">Our Team</h1>
+          <h1 className="lg:text-2xl text-sm font-normal mb-2 text-white">Our Team</h1>
         </motion.div>
         <motion.div
           className="relative w-full h-64 md:h-96 mb-6"
@@ -159,10 +159,10 @@ export default function OurTeam() {
               width={150}
               className="rounded-xl"
             />
-            <div className="text-center mt-2">
+            <div className="text-center text-normal text-white text-sm mt-2">
               <span>Lina & Donat Eltschinger</span>
               <br />
-              <span>Position</span>
+              <span className="font-light">Position</span>
             </div>
           </motion.div>
           <motion.div
@@ -181,11 +181,10 @@ export default function OurTeam() {
               width={150}
               className="rounded-xl"
             />
-            <div className="text-center mt-2">
+            <div className="text-center text-normal text-white text-sm mt-2">
               <span>Boris Ramuz</span>
-              <br />
-              <span>Position</span>
             </div>
+              <span className="font-light">Position</span>
           </motion.div>
           <motion.div
             className="flex flex-col items-center justify-center mb-20"
@@ -203,11 +202,10 @@ export default function OurTeam() {
               width={150}
               className="rounded-xl"
             />
-            <div className="text-center mt-2">
+            <div className="text-center text-normal text-white text-sm mt-2">
               <span>Algi Febrian</span>
-              <br />
-              <span>Position</span>
             </div>
+              <span className="font-light">Position</span>
           </motion.div>
           <motion.div
             className="flex flex-col items-center justify-center mb-20"
@@ -225,11 +223,10 @@ export default function OurTeam() {
               width={150}
               className="rounded-xl"
             />
-            <div className="text-center mt-2">
+            <div className="text-center text-normal text-white text-sm mt-2">
               <span>Co-worker(s) Algi</span>
-              <br />
-              <span>Position</span>
             </div>
+              <span className="font-light">Position</span>
           </motion.div>
           <motion.div
             className="flex flex-col items-center justify-center mb-20"
@@ -247,11 +244,10 @@ export default function OurTeam() {
               width={150}
               className="rounded-xl"
             />
-            <div className="text-center mt-2">
+            <div className="text-center text-normal text-white text-sm mt-2">
               <span>Bauer als Beispiel, mit Familie</span>
-              <br />
-              <span>Position</span>
             </div>
+              <span className="font-light">Position</span>
           </motion.div>
           <motion.div
             className="flex flex-col items-center justify-center mb-20"
@@ -269,11 +265,10 @@ export default function OurTeam() {
               width={150}
               className="rounded-xl"
             />
-            <div className="text-center mt-2">
+            <div className="text-center text-normal text-white text-sm mt-2">
               <span>Yussuf Prayogo</span>
-              <br />
-              <span>Position</span>
             </div>
+              <span className="font-light">Position</span>
           </motion.div>
         </div>
       </div>

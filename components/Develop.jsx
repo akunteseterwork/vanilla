@@ -59,10 +59,10 @@ export default function Develop() {
     const isMobile = window.innerWidth <= 1000;
     const totalContentHeight =
       windowHeight +
-      (containerRef.current ? containerRef.current.offsetHeight : isMobile ? 2400 : 1250) +
-      (headerRef.current ? headerRef.current.offsetHeight : isMobile ? 2400 : 1250) +
-      (mediaRef.current ? mediaRef.current.offsetHeight : isMobile ? 2400 : 1350) +
-      (descriptionRef.current ? descriptionRef.current.offsetHeight : isMobile ? 2400 : 1350);
+      (containerRef.current ? containerRef.current.offsetHeight : isMobile ? 2400 : 1600) +
+      (headerRef.current ? headerRef.current.offsetHeight : isMobile ? 2400 : 1600) +
+      (mediaRef.current ? mediaRef.current.offsetHeight : isMobile ? 2400 : 1600) +
+      (descriptionRef.current ? descriptionRef.current.offsetHeight : isMobile ? 2400 : 1600);
 
     if (window.scrollY > totalContentHeight) {
       setIsVisible({
@@ -120,7 +120,7 @@ export default function Develop() {
           initial={isVisible.container ? "visible" : "hidden"}
           animate={isVisible.container ? "visible" : "hidden"}
         >
-          <h1 className="lg:text-2xl sm:text-md font-semibold mb-2">How We Develop</h1>
+          <h1 className="lg:text-2xl text-sm font-normal mb-2 text-white">How We Develop</h1>
         </motion.div>
         <motion.div
           className="relative w-full h-64 md:h-96 mb-6"
@@ -176,7 +176,10 @@ export default function Develop() {
             animate={isVisible.description ? "visible" : "hidden"}
             ref={descriptionRef}
           >
+            <div style={{ overflow: "hidden", textOverflow: "ellipsis", whiteSpace: "wrap" , fontSize: "14px", fontWeight: "300" }}>
+
             The vanilla beans are ready for harvest approximately 6 to 9 months after pollination. The beans must be hand-picked, one at a time, at exactly the right moment of ripeness. Too early, and they won’t have the proper flavor, and too late…they may start splitting.
+            </div>
           </motion.div>
         </div>
       </div>

@@ -73,14 +73,14 @@ export default function OurWork() {
     const isMobile = window.innerWidth <= 1000;
     const totalContentHeight =
       windowHeight +
-      (containerRef.current ? containerRef.current.offsetHeight : isMobile ? 450 : 200) +
-      (headerRef.current ? headerRef.current.offsetHeight : isMobile ? 450 : 200) +
-      (image1Ref.current ? image1Ref.current.offsetHeight : isMobile ? 450 : 200) +
-      (image2Ref.current ? image2Ref.current.offsetHeight : isMobile ? 450 : 200) +
-      (image3Ref.current ? image3Ref.current.offsetHeight : isMobile ? 450 : 200) +
-      (description1Ref.current ? description1Ref.current.offsetHeight : isMobile ? 450 : 200) +
-      (description2Ref.current ? description2Ref.current.offsetHeight : isMobile ? 450 : 200) +
-      (description3Ref.current ? description3Ref.current.offsetHeight : isMobile ? 450 : 200);
+      (containerRef.current ? containerRef.current.offsetHeight : isMobile ? 450 : 300) +
+      (headerRef.current ? headerRef.current.offsetHeight : isMobile ? 450 : 300) +
+      (image1Ref.current ? image1Ref.current.offsetHeight : isMobile ? 450 : 300) +
+      (image2Ref.current ? image2Ref.current.offsetHeight : isMobile ? 450 : 300) +
+      (image3Ref.current ? image3Ref.current.offsetHeight : isMobile ? 450 : 300) +
+      (description1Ref.current ? description1Ref.current.offsetHeight : isMobile ? 450 : 300) +
+      (description2Ref.current ? description2Ref.current.offsetHeight : isMobile ? 450 : 300) +
+      (description3Ref.current ? description3Ref.current.offsetHeight : isMobile ? 450 : 300);
 
     if (window.scrollY > totalContentHeight) {
       setIsVisible({
@@ -149,7 +149,7 @@ export default function OurWork() {
           initial={isVisible.container ? "visible" : "hidden"}
           animate={isVisible.container ? "visible" : "hidden"}
         >
-          <h1 className="lg:text-2xl sm:text-md font-semibold mb-2">How We Work</h1>
+          <h1 className="lg:text-2xl text-sm font-normal mb-2 text-white">How We Work</h1>
         </motion.div>
         <motion.div
           className="relative w-full h-64 md:h-96 mb-6"
@@ -191,7 +191,7 @@ export default function OurWork() {
             initial={isVisible.description1 ? "visible" : "hidden"}
             animate={isVisible.description1 ? "visible" : "hidden"}
           >
-            <div style={{ overflow: "hidden", textOverflow: "ellipsis", whiteSpace: "wrap" }}>
+            <div style={{ overflow: "hidden", textOverflow: "ellipsis", whiteSpace: "wrap" , fontSize: "14px", fontWeight: "300" }}>
               The island of Java is around 2.5 times the size of Switzerland. The cultivation of spices, fruits and herbs has a centuries-old tradition that has been constantly developed over the years. The Mount Lawu project includes specially selected gardens between 1 and 10 hectares. The farms do not practice monoculture. Various products, such as avocado, mango, cloves, vanilla, cinnamon or citrus fruits are grown in the same gardens. Sufficient open spaces are maintained to prevent overuse of the soil.
             </div>
           </motion.div>
@@ -221,7 +221,7 @@ export default function OurWork() {
             initial={isVisible.description1 ? "visible" : "hidden"}
             animate={isVisible.description1 ? "visible" : "hidden"}
           >
-            <div style={{ overflow: "hidden", textOverflow: "ellipsis", whiteSpace: "wrap" }}>
+            <div style={{ overflow: "hidden", textOverflow: "ellipsis", whiteSpace: "wrap" , fontSize: "14px", fontWeight: "300" }}>
               Algi Febrian is our quality manager on site: He studied organic agriculture. Working with dozens of local farmers, he has developed a method to grow Mount Lawu produce using organic and sustainable principles. He trains and coordinates the small farmers and ensures the supply chain.                        </div>
           </motion.div>
         </div>
@@ -250,7 +250,7 @@ export default function OurWork() {
             initial={isVisible.description1 ? "visible" : "hidden"}
             animate={isVisible.description1 ? "visible" : "hidden"}
           >
-            <div style={{ overflow: "hidden", textOverflow: "ellipsis", whiteSpace: "wrap" }}>
+            <div style={{ overflow: "hidden", textOverflow: "ellipsis", whiteSpace: "wrap" , fontSize: "14px", fontWeight: "300" }}>
               <p>Sustainable production and processing form our principles.</p>
               <p>● Socially acceptable: The small farmers and other people who work on Mount Lawu are paid fairly. Mount Lawu also contributes to the costs of insurance and training.</p>
               <p>● Ecologically. The various products are grown exclusively according to ecological principles and are tailored to specific needs. </p>

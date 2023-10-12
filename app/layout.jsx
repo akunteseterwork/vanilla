@@ -26,7 +26,6 @@ export default function RootLayout({ children }) {
       <head>
         <meta charSet="UTF-8" />
         <title>{metadata.title}</title>
-        <description>{metadata.description}</description>
       </head>
       <body>
         {children}

@@ -7,15 +7,15 @@ export default function Footer() {
         <hr className="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
         <div className="sm:flex sm:items-center sm:justify-between">
           <div className="mb-4 sm:mb-0">
-            <div className="text-sm font-semibold">Mount Lawu</div>
-            <p className="text-xs">Fine Indonesian Food</p>
-            <p className="text-xs">Würzenrain 24</p>
-            <p className="text-xs">CH 6013 Eigenthal</p>
-            <p className="text-xs">Switzerland</p>
+            <div className="text-sm font-normal text-white">Mount Lawu</div>
+            <p className="text-xs font-light">Fine Indonesian Food</p>
+            <p className="text-xs font-light">Würzenrain 24</p>
+            <p className="text-xs font-light">CH 6013 Eigenthal</p>
+            <p className="text-xs font-light">Switzerland</p>
             <div className="mt-2">
-              <Link href="mailto:info@mount-lawu.ch" className="text-blue-500 text-xs">info@mount-lawu.ch</Link>
+              <Link href="mailto:info@mount-lawu.ch" className="text-blue-500 text-xs font-light">info@mount-lawu.ch</Link>
             </div>
-            <p className="text-xs">Fon +41 (0)79 828 48 39</p>
+            <p className="text-xs font-light">Fon +41 (0)79 828 48 39</p>
           </div>
           <ul className="flex flex-wrap items-center mb-6 text-xs font-medium text-gray-500 sm:mb-0 dark:text-gray-400">
             <li>
