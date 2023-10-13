@@ -16,7 +16,11 @@ export default function RootLayout({ children }) {
 
     script.onload = () => {
       window.googleTranslateElementInit = function () {
-        new window.google.translate.TranslateElement({ pageLanguage: 'en' }, 'google_translate_element');
+        new window.google.translate.TranslateElement({ 
+          pageLanguage: 'en',
+          includedLanguages: 'de,fr,ru,it'
+        }, 
+          'google_translate_element');
       };
     };
   }, []);
